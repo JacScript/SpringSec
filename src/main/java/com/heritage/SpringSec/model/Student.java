@@ -1,4 +1,4 @@
-package com.heritage.SpringSec;
+package com.heritage.SpringSec.model;
 
 public class Student {
     private int id;
