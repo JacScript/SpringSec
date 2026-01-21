@@ -21,6 +21,13 @@ public class UserController {
         // In a real application, you would save the user to the database here
         return service.registerUserService(user);
     } 
+
+    @PostMapping("/login")
+    public String loginUser(@RequestBody Users user) {
+        // In a real application, you would authenticate the user here
+        System.out.println("user logged in: " + user.getUsername());
+        return "success";
+    }
     
 
 }
