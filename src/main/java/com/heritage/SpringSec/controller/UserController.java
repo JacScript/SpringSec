@@ -25,8 +25,7 @@ public class UserController {
     @PostMapping("/login")
     public String loginUser(@RequestBody Users user) {
         // In a real application, you would authenticate the user here
-        System.out.println("user logged in: " + user.getUsername());
-        return "success";
+        return service.loginUserService(user);
     }
     
 
